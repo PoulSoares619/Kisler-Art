@@ -525,10 +525,6 @@ video {
   height: 5rem;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-32 {
   height: 8rem;
 }
@@ -549,20 +545,12 @@ video {
   width: 3.5rem;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
 .flex-row {
   flex-direction: row;
 }
 
 .justify-between {
   justify-content: space-between;
-}
-
-.self-end {
-  align-self: flex-end;
 }
 
 .bg-projeto-roxo {
