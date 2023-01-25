@@ -12,3 +12,25 @@
     background-position: center;
     background-size: cover;
 }
+.nav_lateral{
+    height: 100vh;
+    width: 50%;
+    background-image: linear-gradient(to right,#4397BB,#613967);    
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.nav_lateral a{
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+}
+.nav_lateral button{
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+}
