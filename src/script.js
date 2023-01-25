@@ -1,9 +1,10 @@
 const abrirMenu = () =>{
     document.getElementById('nav_open').style.width = "250px";
-    document.getElementById('nav_open').style.boxShadow = "0px 10px 100px 1600px rgba(0, 0, 0, 0.60)";
-    
+    document.getElementById('sombra-fundo').style.position = "absolute"
+    document.getElementById('sombra-fundo').classList.remove('hidden')
 }
 const fechaMenu = () =>{
     document.getElementById('nav_open').style.width = "0px";
-    document.getElementById('nav_open').style.boxShadow = 'none';
+    //document.getElementById('sombra-fundo').style.display = "hidden"
+    document.getElementById('sombra-fundo').classList.add('hidden')
 }
