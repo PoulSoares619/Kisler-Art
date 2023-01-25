@@ -5,4 +5,10 @@
 
 .pixel{
     font-family: 'VT323', monospace;
+    background-image:url(../IMG/);
+}
+#header{
+    background-image:url(../IMG/LOGO/f\ undo.png);
+    background-position: center;
+    background-size: cover;
 }
