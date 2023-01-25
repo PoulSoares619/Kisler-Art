@@ -589,7 +589,7 @@ video {
 
 .nav_lateral{
   height: 100vh;
-  width: 50%;
+  width: 0;
   background-image: linear-gradient(to right,#4397BB,#613967);
   position: fixed;
   top: 0;
