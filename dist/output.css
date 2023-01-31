@@ -513,6 +513,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -522,6 +556,15 @@ video {
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .block {
@@ -544,12 +587,16 @@ video {
   height: 84px;
 }
 
-.h-20 {
-  height: 5rem;
+.h-\[150px\] {
+  height: 150px;
 }
 
 .h-24 {
   height: 6rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-6 {
@@ -574,6 +621,14 @@ video {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-6 {
@@ -638,8 +693,16 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-\[40px\] {
+  padding-bottom: 40px;
 }
 
 .text-4xl {
@@ -649,12 +712,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.shadow-\[0_50px_60px_-15px_rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
-  --tw-shadow: 0 50px 60px -15px rgba(0,0,0,0.3);
-  --tw-shadow-colored: 0 50px 60px -15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .delay-1000 {
@@ -691,6 +748,27 @@ video {
   overflow: hidden;
 }
 
+.card_img{
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  margin: 10px ;
+  border-radius: 20px;
+}
+
+.small_img{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /*.nav_lateral a{
     font-size: 25px;
     display: block;
@@ -709,4 +787,10 @@ video {
 .hover\:text-6xl:hover {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
 }
