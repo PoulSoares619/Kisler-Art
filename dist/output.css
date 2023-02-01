@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -734,6 +738,10 @@ video {
   right: 0;
   z-index: 1;
   overflow: hidden;
+}
+
+#sombra-fundo{
+  position: fixed;
 }
 
 .galeria_item{
