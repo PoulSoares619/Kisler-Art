@@ -513,40 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .absolute {
   position: absolute;
 }
@@ -558,25 +524,8 @@ video {
   left: 0px;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .mt-0 {
   margin-top: 0px;
-}
-
-.mr-0 {
-  margin-right: 0px;
-}
-
-.ml-\[20px\] {
-  margin-left: 20px;
 }
 
 .ml-\[30px\] {
@@ -585,6 +534,10 @@ video {
 
 .mt-\[10px\] {
   margin-top: 10px;
+}
+
+.mt-\[20px\] {
+  margin-top: 20px;
 }
 
 .block {
@@ -623,12 +576,12 @@ video {
   height: 1.5rem;
 }
 
-.h-\[40px\] {
-  height: 40px;
+.h-\[30px\] {
+  height: 30px;
 }
 
-.h-\[205px\] {
-  height: 205px;
+.h-\[100px\] {
+  height: 100px;
 }
 
 .w-screen {
@@ -659,14 +612,6 @@ video {
   width: 100%;
 }
 
-.w-\[125px\] {
-  width: 125px;
-}
-
-.w-\[50px\] {
-  width: 50px;
-}
-
 .origin-center {
   transform-origin: center;
 }
@@ -683,6 +628,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -691,8 +640,16 @@ video {
   justify-content: space-between;
 }
 
-.gap-y-6 {
-  row-gap: 1.5rem;
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.gap-\[2vw\] {
+  gap: 2vw;
 }
 
 .bg-gray-200 {
@@ -714,6 +671,11 @@ video {
   padding-bottom: 20px;
 }
 
+.px-\[1vw\] {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -728,18 +690,6 @@ video {
 
 .pt-\[30px\] {
   padding-top: 30px;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pl-\[10px\] {
-  padding-left: 10px;
 }
 
 .text-4xl {
@@ -772,12 +722,13 @@ video {
   background-image: url(../IMG/LOGO/f\ undo\ pontilhado.png);
   background-position: center;
   background-size: cover;
+  box-shadow: 5px 5px 5px #0006;
 }
 
 .nav_lateral{
   height: 100vh;
   width: 0;
-  background-image: linear-gradient(to right,#4397BB,#613967);
+  background-image: url(../IMG/LOGO/f\ undo\ pontilhado\ vertical\ 1.png);
   position: fixed;
   top: 0;
   right: 0;
@@ -785,25 +736,19 @@ video {
   overflow: hidden;
 }
 
-.card_img{
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-  margin: 10px ;
-  border-radius: 20px;
+.galeria_item{
+  width: 340px;
+  height: 340px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px #0006;
 }
 
-.small_img{
-  margin: 0;
-  height: 100%;
+.galeria_item img{
   width: 100%;
-  cursor: pointer;
-}
-
-.row{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
 }
 
 /*.nav_lateral a{
@@ -821,6 +766,16 @@ video {
   width: 5rem;
 }
 
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.hover\:animate-pulse:hover {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 .hover\:text-6xl:hover {
   font-size: 3.75rem;
   line-height: 1;
@@ -833,9 +788,5 @@ video {
 
   .md\:block {
     display: block;
-  }
-
-  .md\:w-\[70px\] {
-    width: 70px;
   }
 }
