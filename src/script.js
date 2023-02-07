@@ -1,6 +1,6 @@
 const abrirMenu = () =>{
     document.getElementById('nav_open').style.width = "250px";
-    document.getElementById('sombra-fundo').style.position = "absolute"
+    document.getElementById('sombra-fundo').style.position = "fixed"
     document.getElementById('sombra-fundo').classList.remove('hidden')
 }
 const fechaMenu = () =>{
