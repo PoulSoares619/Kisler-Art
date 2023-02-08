@@ -5,14 +5,26 @@ var modalImg = document.querySelector('#modal_img');
 var btClose = document.querySelector('#bt_close');
 var srcVal = '';
 
-for(var i = 0; i < imagens.length; i++){
+/*imagens.forEach((imagem)=>{
+    imagem.addEventListener('click',() => {
+        var i = 0;
+        while(i < imagens.length ){
+            srcVal = imagens[i].getAttribute('src');
+            modalImg.setAttribute('src', srcVal);
+            modal.classList.toggle('modal_active');
+            i++
+        }
+    })
+})*/
+
+/*for(var i = 0; i < imagens.length; i++){
     imagens[i].addEventListener('click', () => {
         srcVal = imagens[i].getAttribute('src');
         modalImg.setAttribute('src', srcVal);
         modal.classList.toggle('modal_active')//deixa o modal visivel no css
     });
     
-}
+}*/
 
 const abrirMenu = () =>{
     document.getElementById('nav_open').style.width = "250px";
@@ -27,8 +39,4 @@ const fechaMenu = () =>{
 
 
 
-/*imagens.forEach((imagem)=>{
-    imagem.addEventListener('click',() => {
-        alert(imagem);
-    })
-})*/
+

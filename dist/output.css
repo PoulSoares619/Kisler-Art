@@ -799,10 +799,6 @@ video {
   font-weight: bold;
 }
 
-.modal_active{
-  visibility: visible;
-}
-
 .hover\:w-20:hover {
   width: 5rem;
 }
@@ -831,3 +827,4 @@ video {
     display: block;
   }
 }
+
