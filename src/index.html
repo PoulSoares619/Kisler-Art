@@ -10,7 +10,7 @@
 </head>
 <body class="pixel">
     <div id="sombra-fundo" class=" hidden inset-0  bg-gray-200 bg-opacity-50 delay-1000 " ></div>
-    <header id="header" class="w-screen  h-36  pb-2 px-6 flex flex-row justify-between md:rel ">
+    <header id="header" class="w-full h-36 z-30 pb-2 px-6 flex flex-row justify-between md:rel ">
         <img class="w-14 h-full py-[20px]" src="../IMG/LOGO/Só o colelho 1.png" alt="logo coelho caolho">
             <img class='hidden md:block w-[600px] h-[200px] pb-[40px] pl-[60px]  mt-0' src="../IMG/LOGO/Kisler art.png" alt="logo Kisler Art">
         <button onclick="abrirMenu()" class="w-[100px] h-[90px]" type="submit">
@@ -19,7 +19,7 @@
             </svg>
         </button>          
     </header>
-    <nav id="nav_open" class="nav_lateral duration-500 ">
+    <nav id="nav_open" class="nav_lateral duration-500 origin-right">
         <div class="w-full h-full flex flex-col  justify-around  items-center">
             <a class="block h-[30px]   text-4xl font-semibold cursor-pointer hover:text-6xl duration-300 origin-center" onclick="fechaMenu()">&times;</a>
             <button class=" block ">
@@ -40,139 +40,145 @@
             
         </div>
     </nav>
-    <main class="mt-0">
-        <div class="flex flex-wrap justify-evenly mt-[20px] gap-[2vw] px-[1vw]">
+    <div class="modal" >
+        <div class="modal_content">
+            <img src="../IMG/ARTES/Clube das Winx.jpg"  id="modal_img">
+        </div>
+        <span id="bt_close">&times;</span>
+    </div>
+    <main class="mt-0 ">
+        <div class="flex flex-wrap justify-evenly  gap-[2vw] pt-[170px]  px-[1vw]">
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Naruto - Kakashi.jpg" alt="Kakashi">
+                <img src="../IMG/ARTES/Naruto - Kakashi.jpg" class="small_img" alt="Kakashi">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Naruto - Naruto.jpg" alt="Naruto">
+                <img src="../IMG/ARTES/Naruto - Naruto.jpg" class="small_img" alt="Naruto">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Naruto - Obito.jpg" alt="Obito">
+                <img src="../IMG/ARTES/Naruto - Obito.jpg" class="small_img" alt="Obito">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Naruto - Sasuke.jpg" alt="Sasuke">
+                <img src="../IMG/ARTES/Naruto - Sasuke.jpg" class="small_img" alt="Sasuke">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Shikamaru.jpg" alt="Shikamaru">
+                <img src="../IMG/ARTES/Shikamaru.jpg" class="small_img" alt="Shikamaru">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Dawn e PIPLUP.jpg" alt="Dawn e piplup">
+                <img src="../IMG/ARTES/Dawn e PIPLUP.jpg" class="small_img" alt="Dawn e piplup">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Djuh djuh e Arcanine.jpg" alt="Djuh e Arcanine">
+                <img src="../IMG/ARTES/Djuh djuh e Arcanine.jpg" class="small_img" alt="Djuh e Arcanine">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Marnie e Morpeko.jpg" alt="Marnie e Morpeko">
+                <img src="../IMG/ARTES/Marnie e Morpeko.jpg" class="small_img" alt="Marnie e Morpeko">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Ash art.jpg" alt="Ash art">
+                <img src="../IMG/ARTES/Ash art.jpg" class="small_img" alt="Ash art">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/pokemon squad.jpg" alt="pokemon squad">
+                <img src="../IMG/ARTES/pokemon squad.jpg" class="small_img" alt="pokemon squad">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/The Last of Us.jpg" alt="The Last of Us">
+                <img src="../IMG/ARTES/The Last of Us.jpg" class="small_img" alt="The Last of Us">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/She Hulk.jpg" alt="She Hulk">
+                <img src="../IMG/ARTES/She Hulk.jpg" class="small_img" alt="She Hulk">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Sailor Moon.jpg" alt="Sailor Moon">
+                <img src="../IMG/ARTES/Sailor Moon.jpg" class="small_img" alt="Sailor Moon">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Sailor.jpg" alt="Sailor Moon 2">
+                <img src="../IMG/ARTES/Sailor.jpg" class="small_img" alt="Sailor Moon 2">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Icon da Copa.jpg" alt="Icone da Copa.jpg">
+                <img src="../IMG/ARTES/Icon da Copa.jpg" class="small_img" alt="Icone da Copa.jpg">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Ali (com asas).jpg" alt="Ali (com asas)">
+                <img src="../IMG/ARTES/Ali (com asas).jpg" class="small_img" alt="Ali (com asas)">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Ali.jpg" alt="Ali">
+                <img src="../IMG/ARTES/Ali.jpg" class="small_img" alt="Ali">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Southpark.jpg" alt="Southpark">
+                <img src="../IMG/ARTES/Southpark.jpg" class="small_img" alt="Southpark">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/NGage.jpg" alt="nikolas Cage">
+                <img src="../IMG/ARTES/NGage.jpg" class="small_img" alt="nikolas Cage">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Androide 18 moldura 2.png" alt="Androide 18">
+                <img src="../IMG/ARTES/Androide 18 moldura 2.png" class="small_img" alt="Androide 18">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/3 Espiãs.jpg" alt="3 Espiãs Demais">
+                <img src="../IMG/ARTES/3 Espiãs.jpg" class="small_img" alt="3 Espiãs Demais">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/CAPINHA PPG.jpg" alt="Meninas Super Poderosas">
+                <img src="../IMG/ARTES/CAPINHA PPG.jpg" class="small_img" alt="Meninas Super Poderosas">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Cavalo de fogo.jpg" alt="Cavalo de fogo">
+                <img src="../IMG/ARTES/Cavalo de fogo.jpg" class="small_img" alt="Cavalo de fogo">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Cleiton.jpg" alt="Samurai Cleiton">
+                <img src="../IMG/ARTES/Cleiton.jpg" class="small_img" alt="Samurai Cleiton">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Clube das Winx.jpg" alt="Clube das Winx">
+                <img src="../IMG/ARTES/Clube das Winx.jpg" class="small_img" alt="Clube das Winx">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/D_D Caverna do Dragão.jpg" alt="D&D Caverna do Dragão">
+                <img src="../IMG/ARTES/D_D Caverna do Dragão.jpg" class="small_img" alt="D&D Caverna do Dragão">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Ekko Arcane.jpg" alt="Ekko Arcane">
+                <img src="../IMG/ARTES/Ekko Arcane.jpg" class="small_img" alt="Ekko Arcane">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Jil x Nemesis moldura 2.jpg" alt="Jil x Nemesis">
+                <img src="../IMG/ARTES/Jil x Nemesis moldura 2.jpg" class="small_img" alt="Jil x Nemesis">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Kratos.jpg" alt="Kratos">
+                <img src="../IMG/ARTES/Kratos.jpg" class="small_img" alt="Kratos">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Lhama.jpg" alt="Lhama Guerreira">
+                <img src="../IMG/ARTES/Lhama.jpg" class="small_img" alt="Lhama Guerreira">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/loffy black power.jpg" alt="loffy black power">
+                <img src="../IMG/ARTES/loffy black power.jpg" class="small_img" alt="loffy black power">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Retrato estilo onepiece.jpg" alt="Retrato estilo onepiece">
+                <img src="../IMG/ARTES/Retrato estilo onepiece.jpg" class="small_img" alt="Retrato estilo onepiece">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Lucy.jpg" alt="Lucy">
+                <img src="../IMG/ARTES/Lucy.jpg" class="small_img" alt="Lucy">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Megaman X.jpg" alt="Megaman">
+                <img src="../IMG/ARTES/Megaman X.jpg" class="small_img" alt="Megaman">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/ROLL CHAN.jpg" alt="ROLL CHAN">
+                <img src="../IMG/ARTES/ROLL CHAN.jpg" class="small_img" alt="ROLL CHAN">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Powe CM.jpg" alt="Powe CM">
+                <img src="../IMG/ARTES/Powe CM.jpg" class="small_img" alt="Powe CM">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Morrigan e Lilith.jpg" alt="Morrigan e Lilith">
+                <img src="../IMG/ARTES/Morrigan e Lilith.jpg" class="small_img" alt="Morrigan e Lilith">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Samurai Cleiton Quadro.jpg" alt="Richarlison voleio">
+                <img src="../IMG/ARTES/Samurai Cleiton Quadro.jpg" class="small_img" alt="Richarlison voleio">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Scooby-doo Apocalypse.jpg" alt="Scooby-doo Apocalypse">
+                <img src="../IMG/ARTES/Scooby-doo Apocalypse.jpg" class="small_img" alt="Scooby-doo Apocalypse">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Sandman.jpg" alt="Sandman">
+                <img src="../IMG/ARTES/Sandman.jpg" class="small_img" alt="Sandman">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Super Xuxa Contra o baixo Astral.jpg" alt="Xuxa Contra o baixo Astral">
+                <img src="../IMG/ARTES/Super Xuxa Contra o baixo Astral.jpg" class="small_img" alt="Xuxa Contra o baixo Astral">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Wandinha .jpg" alt="Wandinha">
+                <img src="../IMG/ARTES/Wandinha .jpg" class="small_img" alt="Wandinha">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/Wandinha e Enid.jpg" alt="Wandinha e Enid">
+                <img src="../IMG/ARTES/Wandinha e Enid.jpg" class="small_img" alt="Wandinha e Enid">
             </div>
             <div class="galeria_item">
-                <img src="../IMG/ARTES/SuperMario Bross.jpg" alt="SuperMario Bross">
+                <img src="../IMG/ARTES/SuperMario Bross.jpg" class="small_img" alt="SuperMario Bross">
             </div>
         </div>
     </main> 
