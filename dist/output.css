@@ -768,7 +768,7 @@ video {
   background-color: rgb(0, 0, 0, .7);
   position: fixed;
   z-index: 40;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .modal_content{
