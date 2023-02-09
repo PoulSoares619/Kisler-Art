@@ -5,17 +5,11 @@ var modalImg = document.querySelector('#modal_img');
 var btClose = document.querySelector('#bt_close');
 var srcVal = '';
 
-/*imagens.forEach((imagem)=>{
+imagens.forEach((imagem)=>{
     imagem.addEventListener('click',() => {
-        var i = 0;
-        while(i < imagens.length ){
-            srcVal = imagens[i].getAttribute('src');
-            modalImg.setAttribute('src', srcVal);
-            modal.classList.toggle('modal_active');
-            i++
-        }
+        console.log(imagem)
     })
-})*/
+})
 
 /*for(var i = 0; i < imagens.length; i++){
     imagens[i].addEventListener('click', () => {
