@@ -5,7 +5,7 @@ var modalImg = document.querySelector('#modal_img');
 var btClose = document.querySelector('#bt_close');
 var srcVal = '';
 
-imagens.forEach((imagem)=>{
+//imagens.forEach((imagem)=>{
     imagem.addEventListener('click',() => {
         console.log(imagem)
     })
